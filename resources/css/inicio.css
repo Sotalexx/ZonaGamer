@@ -1,0 +1,22 @@
+
+    /* Ajustes para el color de fondo de la barra de navegación */
+    .navbar {
+        background-color: #333;
+    }
+
+/* hover de colro verde en opciones del nav */
+.navbar-nav .nav-link:hover {
+    color: green !important;
+}
+.separador{
+    border-top:  solid #ccc;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* hover de colro verde en opciones del nav  carrusel*/ 
+.container {
+    background-color: #797979;
+    border-radius: 10px;
+
+}
