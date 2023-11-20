@@ -5,73 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
        @vite(['resources/css/inicio.css'])
 
     <title>ZonaGamer</title>
 </head>
 <body>
 
+<header>
 <nav class="navbar navbar-expand-lg navbar-light bg-gray">
     <a class="navbar-brand" href="#">
-        <img src="{{ asset('img/logo.png') }}" alt="Logo" height="80">
+        <img src="{{ asset('img/logo.png') }}" alt="Logo" height="150px">
     </a>
     
     <form class="form-inline mx-auto ">
-        <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
-        <button class="btn btn-outline-secondary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <input class="form-controlBuscar m-3 p-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-secondary p-2" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
     </form>
 
     
 
-    <div class="collapse navbar-collapse justify-content-end ">
+    <div class="collapse navbar-collapse justify-content-end mt-5 ">
         <ul class="navbar-nav ">
+
+            <!--Carrito de compras-->
             <li class="nav-item">
-                <a class="nav-link text-white" href="#"><i class="fa-solid fa-house"></i>Inicio</a>
+                <a class="nav-link text-white" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
             </li>
-            <li class="nav-item">
-            <a class="nav-link text-white" href="{{ url('/login') }}"><i class="fa-regular fa-user"></i>Iniciar Seccion</a>
+            <!--Meencorazona-->
+            <li class="nav-item text-white">
+            <i class="fa-regular fa-heart" style="height: 100px;"></i>
             </li>
+
+            <!--Personita de inicio de sesion-->
             <li class="nav-item">
-            <a class="nav-link text-white" href="{{ url('/register') }}">Registro</a>
+            <a class="nav-link text-white" href="{{ url('/login') }}"><i class="fa-regular fa-user"></i>Log in</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#"><i class="fa-solid fa-cart-shopping"></i>Carrito</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#"></li><i class="fa-regular fa-credit-card"></i>Pagar</a>
             
             <li class="nav-item">
-                <a class="nav-link text-white" href="#">Perfil</a>
+            <a class="nav-link text-white" href="{{ url('/register') }}">Register</a>
             </li>
+            
         </ul>
     </div>
 </nav>
-<hr class="separador">
+</header> 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-grey">
+
+
+<nav class="navbar2 navbar-expand-lg navbar-light bg-grey">
     <div class="collapse navbar-collapse justify-content-center">
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#"><i class="fa-solid fa-bars"></i>Categorías</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#">Juegos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#">Marcas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#">Prendas + Accesorios</a>
-            </li>
+           
+            <!--Espacio NINTENDO-->
+        <div class="dropdown m-3 p-2">
+            <button class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 NINTENDO
+            </button>
+            <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="#">TODOS LOS JUEGOS/<a></li>
+             <li><a class="dropdown-item" href="#">DIOMIO</a></li>
+             <li><a class="dropdown-item" href="#">ME WA MORIR</a></li>
+            </ul>
+        </div>
+            
+
+            <!--Espacio PS4-->
+        <div class="dropdown m-3 p-2">
+            <button class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 PS4
+            </button>
+            <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="#">TODOS LOS JUEGOS/<a></li>
+             <li><a class="dropdown-item" href="#">Another action</a></li>
+             <li><a class="dropdown-item" href="#">Something else here</a></li>
+             </ul>
+        </div>
+
+            <!--Espacio PS5-->
+        <div class="dropdown m-3 p-2">
+            <button class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 PS5
+            </button>
+            <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="#">TODOS LOS JUEGOS/<a></li>
+             <li><a class="dropdown-item" href="#">Another action</a></li>
+             <li><a class="dropdown-item" href="#">Something else here</a></li>
+             </ul>
+        </div>
+
+                <!--Espacio XBOX-->
+        <div class="dropdown m-3 p-2">
+            <button class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 XBOX
+            </button>
+            <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="#">TODOS LOS JUEGOS/<a></li>
+             <li><a class="dropdown-item" href="#">Another action</a></li>
+             <li><a class="dropdown-item" href="#">Something else here</a></li>
+             </ul>
+        </div>
+
+                <!--Espacio XBOX-->
+        <div class="dropdown m-3 p-2">
+            <button class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 MEMBRESIAS
+            </a>
+            <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="#">TODOS LOS JUEGOS/<a></li>
+             <li><a class="dropdown-item" href="#">Another action</a></li>
+             <li><a class="dropdown-item" href="#">Something else here</a></li>
+             </ul>
+        </div>
+
         </ul>
     </div>
 </nav>
+
+<div class="container-m ">
+    <a href="">
+     <img src="{{ asset('img/Banner-Grande.png') }}" alt="" style="width: 1345px;">
+    </a>
+
+    <hr>
+
+    <div class="retenedor">
+    <div class="contenedor container-m">
+    <a href="">
+     <img src="{{ asset('img/Banner-Pequeno-13.png') }}" alt="" style="width: 500px;">
+    </a>
+   <div class="contenedor2 container-m">
+    <a href="">
+     <img src="{{ asset('img/Banner-Pequeno-14.png') }}" alt="" style="width: 500px;">
+    </a>
+    </div>
+    </div>
+    </div>
+
+</div>
 
 <br>
 <!-- Carrusel centrado con información al lado derecho -->
-<p class="text-center">DESTACADOS</p>
-<div class="container mt-4">
+<p class="text-center">RECOMENDADOS</p>
+<div class="container-m">
     <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="3000">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -147,6 +223,8 @@
     </div>
 </div>
 
+
+
 <!-- Footer -->
 <footer class="bg-dark text-light py-3 mt-5 text-center">
         <p>&copy; 2023 <img src="{{ asset('img/logo.png') }}" alt="Logo" height="80"></p>
@@ -157,6 +235,7 @@
         </p>
         <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
 </footer>
+
 
 
 
