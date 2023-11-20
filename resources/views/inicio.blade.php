@@ -53,9 +53,33 @@
 
 
 
-<nav class="navbar2 navbar-expand-lg navbar-light bg-grey">
+<nav class="navbar2 navbar-expand-lg navbar-black bg-grey">
     <div class="collapse navbar-collapse justify-content-center">
         <ul class="navbar-nav">
+
+        <!--Espacio CATEGORIA-->
+        <div class="dropdown m-3 p-2">
+            <button class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 CATEGORIA
+            </button>
+            <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="#">TODOS LOS JUEGOS/<a></li>
+             <li><a class="dropdown-item" href="#">DIOMIO</a></li>
+             <li><a class="dropdown-item" href="#">ME WA MORIR</a></li>
+            </ul>
+        </div>
+
+        <!--Espacio COLECCIONABLES-->
+        <div class="dropdown m-3 p-2">
+            <button class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 COLECCIONABLES
+            </button>
+            <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="#">TODOS LOS JUEGOS/<a></li>
+             <li><a class="dropdown-item" href="#">DIOMIO</a></li>
+             <li><a class="dropdown-item" href="#">ME WA MORIR</a></li>
+            </ul>
+        </div>
            
             <!--Espacio NINTENDO-->
         <div class="dropdown m-3 p-2">
@@ -83,7 +107,7 @@
         </div>
 
             <!--Espacio PS5-->
-        <div class="dropdown m-3 p-2">
+        <div class="dropdown m-3 p-1">
             <button class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                  PS5
             </button>
@@ -94,8 +118,20 @@
              </ul>
         </div>
 
+        <!--Espacio Pc-->
+        <div class="dropdown m-3 p-1">
+            <button class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 PC
+            </button>
+            <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="#">TODOS LOS JUEGOS/<a></li>
+             <li><a class="dropdown-item" href="#">Another action</a></li>
+             <li><a class="dropdown-item" href="#">Something else here</a></li>
+             </ul>
+        </div>
+
                 <!--Espacio XBOX-->
-        <div class="dropdown m-3 p-2">
+        <div class="dropdown m-3 p-1">
             <button class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                  XBOX
             </button>
@@ -147,7 +183,7 @@
 <br>
 <!-- Carrusel centrado con información al lado derecho -->
 <p class="text-center">RECOMENDADOS</p>
-<div class="container-m">
+<div class="container-m ">
     <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="3000">
         <div class="carousel-inner">
             <div class="carousel-item active">
