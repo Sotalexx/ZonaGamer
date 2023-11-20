@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js">
+    <link rel="shortcut icon" href="{{ asset ('img/logo.png') }}" type="image/x-icon">
+
        @vite(['resources/css/inicio.css'])
 
     <title>ZonaGamer</title>
@@ -19,27 +21,27 @@
     </a>
     
     <form class="form-inline mx-auto ">
-        <input class="form-controlBuscar m-3 p-2" type="search" placeholder="Buscar" aria-label="Search">
-        <button class="btn btn-outline-secondary p-2" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <input class="barra form-controlBuscar m-3 p-2" type="search" placeholder="Buscar producto" aria-label="Search">
+        <button class="lupa btn p-2" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
     </form>
 
     
 
-    <div class="collapse navbar-collapse justify-content-end mt-5 ">
+    <div class=" collapse navbar-collapse justify-content-end mt-5 ">
         <ul class="navbar-nav ">
 
             <!--Carrito de compras-->
             <li class="nav-item">
-                <a class="nav-link text-white" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="nav-link text-white" href="#"><i class="carrito fa-solid fa-cart-shopping"></i></a>
             </li>
             <!--Meencorazona-->
             <li class="nav-item text-white">
-            <i class="fa-regular fa-heart" style="height: 100px;"></i>
+            <a class="nav-link text-white" href="#"><i class="fa-regular fa-heart"></i></a>
             </li>
 
             <!--Personita de inicio de sesion-->
             <li class="nav-item">
-            <a class="nav-link text-white" href="{{ url('/login') }}"><i class="fa-regular fa-user"></i>Log in</a>
+            <a class="nav-link text-white" href="{{ url('/login') }}"><i class="fa-regular fa-user m-1"></i>Log in</a>
             </li>
             
             <li class="nav-item">
@@ -53,104 +55,104 @@
 
 
 
-<nav class="navbar2 navbar-expand-lg navbar-black bg-grey">
+<nav class="navbar2 navbar-expand-lg navbar-black">
     <div class="collapse navbar-collapse justify-content-center">
         <ul class="navbar-nav">
 
         <!--Espacio CATEGORIA-->
-        <div class="dropdown m-3 p-2">
+        <div class="dropdown m-1 p-1">
             <button class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                  CATEGORIA
             </button>
             <ul class="dropdown-menu">
-             <li><a class="dropdown-item" href="#">TODOS LOS JUEGOS/<a></li>
-             <li><a class="dropdown-item" href="#">DIOMIO</a></li>
-             <li><a class="dropdown-item" href="#">ME WA MORIR</a></li>
+             <li><a class="dropdown-item" href="#">Accion<a></li>
+             <li><a class="dropdown-item" href="#">Aventura</a></li>
+             <li><a class="dropdown-item" href="#">RPG</a></li>
             </ul>
         </div>
 
         <!--Espacio COLECCIONABLES-->
-        <div class="dropdown m-3 p-2">
+        <div class="dropdown m-1 p-1">
             <button class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                  COLECCIONABLES
             </button>
             <ul class="dropdown-menu">
-             <li><a class="dropdown-item" href="#">TODOS LOS JUEGOS/<a></li>
-             <li><a class="dropdown-item" href="#">DIOMIO</a></li>
-             <li><a class="dropdown-item" href="#">ME WA MORIR</a></li>
+             <li><a class="dropdown-item" href="#">Camisetas<a></li>
+             <li><a class="dropdown-item" href="#">Funkos</a></li>
+             <li><a class="dropdown-item" href="#">Peluches</a></li>
             </ul>
         </div>
            
             <!--Espacio NINTENDO-->
-        <div class="dropdown m-3 p-2">
+        <div class="dropdown m-1 p-1">
             <button class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                  NINTENDO
             </button>
             <ul class="dropdown-menu">
-             <li><a class="dropdown-item" href="#">TODOS LOS JUEGOS/<a></li>
-             <li><a class="dropdown-item" href="#">DIOMIO</a></li>
-             <li><a class="dropdown-item" href="#">ME WA MORIR</a></li>
+             <li><a class="dropdown-item" href="#">Todos los juegos<a></li>
+             <li><a class="dropdown-item" href="#">Estrenos</a></li>
+             <li><a class="dropdown-item" href="#">Pre venta</a></li>
             </ul>
         </div>
             
 
             <!--Espacio PS4-->
-        <div class="dropdown m-3 p-2">
+        <div class="dropdown m-1 p-1">
             <button class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                  PS4
             </button>
             <ul class="dropdown-menu">
-             <li><a class="dropdown-item" href="#">TODOS LOS JUEGOS/<a></li>
-             <li><a class="dropdown-item" href="#">Another action</a></li>
-             <li><a class="dropdown-item" href="#">Something else here</a></li>
+             <li><a class="dropdown-item" href="#">Todos los juegos<a></li>
+             <li><a class="dropdown-item" href="#">Estrenos</a></li>
+             <li><a class="dropdown-item" href="#">Pre venta</a></li>
              </ul>
         </div>
 
             <!--Espacio PS5-->
-        <div class="dropdown m-3 p-1">
+        <div class="dropdown m-1 p-1">
             <button class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                  PS5
             </button>
             <ul class="dropdown-menu">
-             <li><a class="dropdown-item" href="#">TODOS LOS JUEGOS/<a></li>
-             <li><a class="dropdown-item" href="#">Another action</a></li>
-             <li><a class="dropdown-item" href="#">Something else here</a></li>
+             <li><a class="dropdown-item" href="#">Todos los juegos<a></li>
+             <li><a class="dropdown-item" href="#">Estrenos</a></li>
+             <li><a class="dropdown-item" href="#">Pre venta</a></li>
              </ul>
         </div>
 
         <!--Espacio Pc-->
-        <div class="dropdown m-3 p-1">
+        <div class="dropdown m-1 p-1">
             <button class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                  PC
             </button>
             <ul class="dropdown-menu">
-             <li><a class="dropdown-item" href="#">TODOS LOS JUEGOS/<a></li>
-             <li><a class="dropdown-item" href="#">Another action</a></li>
-             <li><a class="dropdown-item" href="#">Something else here</a></li>
+             <li><a class="dropdown-item" href="#">Todos los juegos<a></li>
+             <li><a class="dropdown-item" href="#">Estrenos</a></li>
+             <li><a class="dropdown-item" href="#">Pre venta</a></li>
              </ul>
         </div>
 
                 <!--Espacio XBOX-->
-        <div class="dropdown m-3 p-1">
+        <div class="dropdown m-1 p-1">
             <button class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                  XBOX
             </button>
             <ul class="dropdown-menu">
-             <li><a class="dropdown-item" href="#">TODOS LOS JUEGOS/<a></li>
-             <li><a class="dropdown-item" href="#">Another action</a></li>
-             <li><a class="dropdown-item" href="#">Something else here</a></li>
+             <li><a class="dropdown-item" href="#">Todos los juegos<a></li>
+             <li><a class="dropdown-item" href="#">Estrenos</a></li>
+             <li><a class="dropdown-item" href="#">Pre venta</a></li>
              </ul>
         </div>
 
                 <!--Espacio XBOX-->
-        <div class="dropdown m-3 p-2">
+        <div class="dropdown m-1 p-1">
             <button class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                  MEMBRESIAS
             </a>
             <ul class="dropdown-menu">
-             <li><a class="dropdown-item" href="#">TODOS LOS JUEGOS/<a></li>
-             <li><a class="dropdown-item" href="#">Another action</a></li>
-             <li><a class="dropdown-item" href="#">Something else here</a></li>
+             <li><a class="dropdown-item" href="#">Todos los juegos<a></li>
+             <li><a class="dropdown-item" href="#">Estrenos</a></li>
+             <li><a class="dropdown-item" href="#">Pre venta</a></li>
              </ul>
         </div>
 
@@ -158,95 +160,156 @@
     </div>
 </nav>
 
-<div class="container-m ">
+<div class="promos container-fluid">
     <a href="">
-     <img src="{{ asset('img/Banner-Grande.png') }}" alt="" style="width: 1345px;">
+     <img src="{{ asset('img/Banner-Grande.png') }}" alt="" >
     </a>
 
     <hr>
 
     <div class="retenedor">
-    <div class="contenedor container-m">
-    <a href="">
-     <img src="{{ asset('img/Banner-Pequeno-13.png') }}" alt="" style="width: 500px;">
-    </a>
-   <div class="contenedor2 container-m">
-    <a href="">
-     <img src="{{ asset('img/Banner-Pequeno-14.png') }}" alt="" style="width: 500px;">
-    </a>
-    </div>
-    </div>
-    </div>
+    
+     <a href="">
+     <img src="{{ asset('img/Banner-Pequeno-13.png') }}" alt="" >
+      </a>
+   
+      <a href="">
+      <img src="{{ asset('img/Banner-Pequeno-14.png') }}" alt="" >
+      </a>
+     </div>
 
 </div>
 
 <br>
+
+<aside>
+
+
+<div id="mobile-filter">
+
+<div class="filter">
+    <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#mobile-filter" aria-expanded="false" aria-controls="mobile-filter">Filters<span class="fa fa-filter pl-1"></span></button>
+</div>
+    <div>
+        <h6 class="p-1 border-bottom">Opciones</h6>
+        <ul>
+            <li><a href="#">Simulacion</a></li>
+            <li><a href="#">Multijugador</a></li>
+            <li><a href="#">Accion</a></li>
+            <li><a href="#">Shooters</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
+    <div>
+        <h6 class="p-1 border-bottom">Filter By</h6>
+        <p class="mb-2">Precio</p>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-action mb-2 rounded"><a href="#">
+                <span class="fa fa-circle pr-1" id="teal"></span>Accesible
+            </a></li>
+            <li class="list-group-item list-group-item-action mb-2 rounded"><a href="#">
+                <span class="fa fa-circle pr-1" id="blue"></span>Normal
+            </a></li>
+            <li class="list-group-item list-group-item-action mb-2 rounded"><a href="#">
+                <span class="fa fa-circle pr-1" id="red"></span>Caroo
+            </a></li>
+        </ul>
+    </div>
+    <div>
+        <h6>Tipo</h6>
+        <form class="ml-md-2">
+            <div class="form-inline border rounded p-sm-2 my-2">
+                <input type="radio" name="type" id="boring">
+                <label for="boring" class="pl-1 pt-sm-0 pt-1">Estrenos</label>
+            </div>
+            <div class="form-inline border rounded p-sm-2 my-2">
+                <input type="radio" name="type" id="ugly">
+                <label for="ugly" class="pl-1 pt-sm-0 pt-1">Pre orden</label>
+            </div>
+            <div class="form-inline border rounded p-md-2 p-sm-1">
+                <input type="radio" name="type" id="notugly">
+                <label for="notugly" class="pl-1 pt-sm-0 pt-1">Tarjetas</label>
+            </div>
+        </form>
+    </div>
+</div>
+
+</aside>
+
+main
+
+
+  
+
+
+
+
+
+
+
+
+
 <!-- Carrusel centrado con información al lado derecho -->
-<p class="text-center">RECOMENDADOS</p>
-<div class="container-m ">
+<!--
+<p class="text-center"> RECOMENDADOS</p>
+<div class="container-s ">
     <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="3000">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="d-flex justify-content-center align-items-center">
                     <img src="{{ asset('img/image1.jpg') }}" class="d-block w-50" alt="Imagen 1 ">
-                    <div class="ml-4">
-                        <p>Con este título innovador y auténtico, <br>
-                         te sentirás mucho más cerca del juego <br>
-                          gracias a una experiencia futbolística más real que nunca</p>
-                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                         <h5>First slide label</h5>
+                         <p>Some representative placeholder content for the first slide.</p>
+                     </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="d-flex justify-content-center align-items-center">
                     <img src="{{ asset('img/image2.jpg') }}" class="d-block w-50" alt="Imagen 2">
-                    <div class="ml-4">
-                        <p>Inicia de la mejor manera con <br>
-                         Call of Duty: Modern Warfare 3 
-                        <br>un emocionante videojuego de disparos en primera persona </p>
-                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                         <h5>First slide label</h5>
+                         <p>Some representative placeholder content for the first slide.</p>
+                     </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="d-flex justify-content-center align-items-center">
                     <img src="{{ asset('img/image3.jpg') }}" class="d-block w-50" alt="Imagen 2">
-                    <div class="ml-4">
-                        
-                        <p>Alan Wake II 
-                           <br> es un videojuego de horror de supervivencia </p>
-                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                         <h5>First slide label</h5>
+                         <p>Some representative placeholder content for the first slide.</p>
+                     </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="d-flex justify-content-center align-items-center">
                     <img src="{{ asset('img/image4.jpg') }}" class="d-block w-50" alt="Imagen 2">
-                    <div class="ml-4">
-                        <p>Una aventura épica a través de la tierra y los cielos te espera en <br>
-                          The Legend of Zelda™: Tears of the Kingdom <br>. 
-                        La aventura es tuya para crearla en un mundo impulsado por tu imaginación</p>
-                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                         <h5>First slide label</h5>
+                         <p>Some representative placeholder content for the first slide.</p>
+                     </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="d-flex justify-content-center align-items-center">
                     <img src="{{ asset('img/image5.png') }}" class="d-block w-50" alt="Imagen 2">
-                    <div class="ml-4">
-                        <p>Los Spider-Men Peter Parker y Miles Morales <br>
-                        regresan para una nueva y emocionante aventura <br>
-                         de la aclamada franquicia Marvel's Spider-Man </p>
-                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                         <h5>First slide label</h5>
+                         <p>Some representative placeholder content for the first slide.</p>
+                     </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="d-flex justify-content-center align-items-center">
                     <img src="{{ asset('img/image6.jpg') }}" class="d-block w-50" alt="Imagen 2">
-                    <div class="ml-4">
-                        <p>Super Mario Bros. Wonder', <br>
-                         una aventura con más personajes, <br>
-                         más transformaciones y más maravillas que nunca</p>
-                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                         <h5>First slide label</h5>
+                         <p>Some representative placeholder content for the first slide.</p>
+                     </div>
                 </div>
             </div>
-            <!-- Agrega más imágenes -->
+            
         </div>
         <a class="carousel-control-prev ml-n3" href="#carouselExample" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -258,8 +321,7 @@
         </a>
     </div>
 </div>
-
-
+-->
 
 <!-- Footer -->
 <footer class="bg-dark text-light py-3 mt-5 text-center">
@@ -281,7 +343,8 @@
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>

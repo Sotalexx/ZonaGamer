@@ -27,6 +27,7 @@
 /* para el registro*/
 .container {
     margin-top: 50px;
+    box-shadow: 20px black;
 }
 
 .form-container {

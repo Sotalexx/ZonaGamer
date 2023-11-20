@@ -1,10 +1,67 @@
 
-    /* Ajustes para el color de fondo de la barra de navegación */
-    .navbar {
-        background-color: #333;
-    }
+header{
+    width: 100%;
+    display:flex;
+}
 
-/* hover de colro verde en opciones del nav */
+/*Ajusta el tamaño de la barra de busqueda*/
+.barra{
+    width: 500px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.lupa i{
+    float: left;
+    background-color: red;
+}
+
+.nav-item {
+    height: 100px;
+    padding: 8px;
+}
+
+
+/* Ajustes para el navbar del header */
+.navbar  
+{
+    height: 100px;
+    width: 100%;
+    background-color:#0F0F0F;     
+}
+
+/*Navbar que controlo los iconos del carrito*/
+
+.navbar2{
+    background-color:#005B41;
+}
+
+.dropdowm-item{
+    vertical-align: inherit;
+}
+
+.promos{
+    
+    width: 100%;
+    padding-top: 20px;
+}
+.promos img{
+    width: 100%;
+}
+
+.retenedor{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+.retenedor img{
+    width: 100%;
+    padding: 5px;
+}
+
+/* hover de color verde en opciones del nav */
 .navbar-nav .nav-link:hover {
     color: green !important;
 }
@@ -14,9 +71,44 @@
     margin-bottom: 1rem;
 }
 
-/* hover de colro verde en opciones del nav  carrusel*/ 
+/* hover de color verde en opciones del nav  carrusel*/ 
 .container {
     background-color: #797979;
     border-radius: 10px;
-
 }
+
+/*Parte del section*/
+
+aside{
+    display: flex;
+    padding: 15px;
+    width: 30%;
+    
+}
+
+ul{
+    list-style: none;
+    padding: 5px;
+}
+li a{
+    color: darkgray;
+    text-decoration: none;
+}
+li a:hover{
+    text-decoration: none;
+    color: darksalmon;
+}
+.fa-circle{
+    font-size: 20px;
+}
+#red{
+    color: #e94545d7;
+}
+#teal{
+    color: rgb(69, 129, 129);
+}
+#blue{
+    color: #0000ff;
+}
+
+

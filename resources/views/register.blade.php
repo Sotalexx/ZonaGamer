@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/style.css">  
+   
+    @vite(['resources/css/register.css'])
 </head>
 
 <body>
 
-    <section class="h-100 gradient-form" style="background-color: #eee;">
+
+ <section class="h-100 gradient-form" >
+    <div class="Hola">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-md-8">
