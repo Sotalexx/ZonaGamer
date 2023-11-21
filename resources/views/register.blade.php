@@ -22,12 +22,8 @@
                         <div class="card-body p-md-5 mx-md-4">
 
                             <form>
-                                <p class="inicio">Crear una cuenta</p>
-                                    <div class="new">
-                                    <p class="user m-3">¿Ya tienes una cuenta?</p>
-                                     <a class="user" href="#">Accede</a>
-                                    </div>
-
+                                 <p class="inicio">Crear una cuenta</p>
+                                    
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <label for="nombre">Nombre</label>

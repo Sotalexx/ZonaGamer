@@ -1,3 +1,6 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
 .fondo{
     background-color:rgb(70, 24, 172);
 }
@@ -7,8 +10,8 @@
 }
 
 .user{
-    background-color: red;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     font-size: 10px;
+    margin-left: 10px;
 }

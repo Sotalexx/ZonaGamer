@@ -21,8 +21,10 @@
     </a>
     
     <form class="form-inline mx-auto ">
-        <input class="barra form-controlBuscar m-3 p-2" type="search" placeholder="Buscar producto" aria-label="Search">
-        <button class="lupa btn p-2" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div class="search-container">
+            <div class="search-icon"></div>
+            <input class="search-input" type="text" placeholder="Buscar...">
+         </div>
     </form>
 
     
@@ -32,20 +34,20 @@
 
             <!--Carrito de compras-->
             <li class="nav-item">
-                <a class="nav-link text-white" href="#"><i class="carrito fa-solid fa-cart-shopping"></i></a>
+                <a class="nav-link text-white" href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
             </li>
             <!--Meencorazona-->
             <li class="nav-item text-white">
-            <a class="nav-link text-white" href="#"><i class="fa-regular fa-heart"></i></a>
+            <a class="nav-link text-white" href="#"><i class="fa-solid fa-heart fa-2xl" style="color: #ffffff;"></i></a>
             </li>
 
             <!--Personita de inicio de sesion-->
             <li class="nav-item">
-            <a class="nav-link text-white" href="{{ url('/login') }}"><i class="fa-regular fa-user m-1"></i>Log in</a>
+            <a class="nav-link text-white" href="{{ url('/login') }}"><i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i>Iniciar Sesión</a>
             </li>
             
             <li class="nav-item">
-            <a class="nav-link text-white" href="{{ url('/register') }}">Register</a>
+            <a class="nav-link text-white" href="{{ url('/register') }}">Registrate</a>
             </li>
             
         </ul>
@@ -300,8 +302,8 @@
         </a>
     </div>
 </div>
--->
 
+-->
 <!-- Footer -->
 <footer class="text-light py-3 mt-5 text-center">
         <p>&copy; 2023 <img src="{{ asset('img/logo.png') }}" alt="Logo" height="80"></p>
