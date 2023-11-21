@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <link rel="shortcut icon" href="{{ asset ('img/logo.png') }}" type="image/x-icon">
+    <title>ZonaGamer</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
    
     @vite(['resources/css/register.css'])
@@ -12,9 +13,8 @@
 
 <body>
 
-
  <section class="h-100 gradient-form" >
-    <div class="Hola">
+    <div class="fondo">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-md-8">
@@ -22,7 +22,11 @@
                         <div class="card-body p-md-5 mx-md-4">
 
                             <form>
-                                <p>Registro de Usuario</p>
+                                <p class="inicio">Crear una cuenta</p>
+                                    <div class="new">
+                                    <p class="user m-3">¿Ya tienes una cuenta?</p>
+                                     <a class="user" href="#">Accede</a>
+                                    </div>
 
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
