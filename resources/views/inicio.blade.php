@@ -182,16 +182,17 @@
 
 <br>
 
+<main>
+    
+</main>
+
 <aside>
-
-
 <div id="mobile-filter">
-
 <div class="filter">
     <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#mobile-filter" aria-expanded="false" aria-controls="mobile-filter">Filters<span class="fa fa-filter pl-1"></span></button>
 </div>
     <div>
-        <h6 class="p-1 border-bottom">Opciones</h6>
+        <h6 class="p-1 border-bottom"></h6>
         <ul>
             <li><a href="#">Simulacion</a></li>
             <li><a href="#">Multijugador</a></li>
@@ -201,19 +202,10 @@
         </ul>
     </div>
     <div>
-        <h6 class="p-1 border-bottom">Filter By</h6>
-        <p class="mb-2">Precio</p>
-        <ul class="list-group">
-            <li class="list-group-item list-group-item-action mb-2 rounded"><a href="#">
-                <span class="fa fa-circle pr-1" id="teal"></span>Accesible
-            </a></li>
-            <li class="list-group-item list-group-item-action mb-2 rounded"><a href="#">
-                <span class="fa fa-circle pr-1" id="blue"></span>Normal
-            </a></li>
-            <li class="list-group-item list-group-item-action mb-2 rounded"><a href="#">
-                <span class="fa fa-circle pr-1" id="red"></span>Caroo
-            </a></li>
-        </ul>
+        <h6 class="p-1 border-bottom">Filtrado  </h6>
+        <p class="mb-2">Precio (USD)</p>
+        <input type="range" name="precio" id="precio-game" max="100" min="0">
+        <p>$0</p><p>$100</p>
     </div>
     <div>
         <h6>Tipo</h6>
@@ -233,20 +225,7 @@
         </form>
     </div>
 </div>
-
 </aside>
-
-main
-
-
-  
-
-
-
-
-
-
-
 
 
 <!-- Carrusel centrado con información al lado derecho -->
@@ -324,7 +303,7 @@ main
 -->
 
 <!-- Footer -->
-<footer class="bg-dark text-light py-3 mt-5 text-center">
+<footer class="text-light py-3 mt-5 text-center">
         <p>&copy; 2023 <img src="{{ asset('img/logo.png') }}" alt="Logo" height="80"></p>
         <p>
             <a href="#" class="text-light"><i class="fab fa-facebook"></i></a>
