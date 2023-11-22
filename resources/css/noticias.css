@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a5a5a5;
+  }
+
+  .navbar {
+    background-color: #343a40; /* Color de fondo del navbar */
+    color: #fff; /* Color del texto en el navbar */
+  }
+
+  .navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 20px; /* Espacio entre el logo y la barra de búsqueda */
+  }
+
+  .search-bar {
+    margin-right: auto;
+  }
+
+  .noticias-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  }
+
+  .noticia {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+
+  .noticia img {
+    max-width: 300px;
+    margin-right: 20px;
+  }
+
+  .noticia h2 {
+    margin: 0;
+  }
+
+  .footer {
+    background-color: #f8f9fa; /* Color de fondo del footer */
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }

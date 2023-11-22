@@ -24,3 +24,16 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('register'); 
 });
+
+Route::get('/noticias', function () {
+    return view('noticias'); 
+});
+
+Route::get('/inicio', function () {
+    return view('inicio'); 
+});
+
+Route::get('/terminos', function () {
+    return view('terminos'); 
+});
+
