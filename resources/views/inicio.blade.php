@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="{{ asset ('img/logo.png') }}" type="image/x-icon">
 
        @vite(['resources/css/inicio.css'])
+       @vite(['resources/css/cards.css'])
 
     <title>ZonaGamer</title>
 </head>
@@ -22,20 +23,21 @@
   </div>
 
   <!--Barra de busqueda-->
-  <div class="contenedor-barra">
+  
     <div class="barra-container">
          <input class="buscar" type="text" placeholder="Buscar">
         <div class="btn-barra">
              <i class="fas fa-search"></i>
          </div>
     </div>
-    </div>
+
 
  <!--Botones de interaccion-->
     <div class="btn-interaccion">
-        <a href="#"><i class="fas fa-heart"></i></a>
-        <a href="#"><i class="fas fa-shopping-cart"></i></a>
-        <a href="{{ url('/login') }}"><i class="fas fa-user"></i></a>
+        <a href="#"><i class="corazon fas fa-heart"></i></a>
+        <a href="#"><i class="carrito fas fa-shopping-cart"></i></a>
+        <a href=""><i class="fas fa-user"></i></a>
+        <a href="{{ url('/login') }}"><h3>Sign In</h3></a>
     </div>
 
  
@@ -87,18 +89,24 @@
           </div>
         </navbar> 
     
-
-         <!--Banner principal-->
-         <div class="logo-mamamlon">
-            <img src="{{asset('img/banner-maalon.jpg')}}" alt="">
-         </div>
-
-         <!--Tendecias de productos-->
-         <div class="container-tendencia">
-            <div class="tendecia">
-                <h2>Tendencias</h2><hr>
+        <aside class="aside-container">
+            <div class="banner-principal">
+                <img src="{{ asset ('img/banner-maalon.jpg') }}" alt="">
             </div>
-         </div>
+        </aside>
+
+        <h2 class="tende">Tendencias</h2>
+
+    <main class="main-container">
+
+        
+    </main>
+    
+        
+        
+
+        
+
 
 
 

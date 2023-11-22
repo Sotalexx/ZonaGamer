@@ -38,12 +38,8 @@ body{
 
 /*Barra de busqueda*/
 
-.contenedor-barra{
-    background-color: red;
-}
-
 .barra-container{
-    position: absolute;
+    position:absolute;
     transform: translate(-50%, -50%);
     left: 50%;
     top:8%;
@@ -75,10 +71,10 @@ body{
     height: 80px;
     background: red;
     line-height: 80px;
-    border-radius: 50%;
+    border-radius:50%;
     text-align: center;
     cursor: pointer;
-    transition: 0.5s;
+    transition: .5s;
 }
 
 .btn-barra i{
@@ -88,8 +84,8 @@ body{
     transition: all 0.7s ease;
 }
 
-.barra-container ::hover .buscar{
-    width: 100px;
+.barra-container:hover .buscar{
+    width:450px;
 }
 
 .barra-container::hover i{
@@ -109,11 +105,19 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 10px;
 }
 
 .btn-interaccion i{
-    padding: 10px;
     color: white;
+}
+
+.btn-interaccion:hover .corazon{
+  color: red;
+}
+
+.btn-interaccion h3{
+  color: white;
 }
 
 /*Termina interaccion*/
@@ -135,22 +139,31 @@ body{
 
 /*Termina navbar*/
 
-.logo-mamamlon{
-    width: 100%;
+.aside-container{
+  width: 100%;
 }
 
-.logo-mamamlon img{
-    width: 100%;
+.banner-principal img{
+  width: 100%;
 }
 
-.container-tendencia{
-    background:lightblue;
-    width: 100%;
-    height: 100vh;
-    color: #fff;
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-around;
+.tende{
+  margin-top: 10px;
+  color: white;
+  background-color: red;
 }
+
+.main-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
 
 

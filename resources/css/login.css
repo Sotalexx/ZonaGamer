@@ -130,11 +130,12 @@ body{
 }
 
 .social-icons{
-    color: white;
+
     margin: 20px 0;
 }
 
 .social-icons a{
+    color: white;
     border: 1px solid #ccc;
     border-radius: 20%;
     display: inline-flex;
