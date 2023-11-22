@@ -21,7 +21,8 @@
                     <div class="card rounded-3 text-black">
                         <div class="card-body p-md-5 mx-md-4">
 
-                            <form>
+                        <form action="{{ route('register') }}" method="POST" enctype="multipart/form-data">
+                            @csrf
                                  <p class="inicio">Crear una cuenta</p>
                                     
                                 <div class="form-row">
@@ -32,7 +33,7 @@
 
                                     <div class="form-group col-md-6">
                                         <label for="apellido">Apellido</label>
-                                        <input type="text" id="apellido" class="form-control" />
+                                        <input type="text" id="apellido" class="form-control" /> 
                                     </div>
                                 </div>
 
