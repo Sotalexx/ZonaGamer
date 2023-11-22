@@ -16,17 +16,30 @@
    <div class="container" id="container">
     <div class="form-container sign-up">
       <form>
-        <h1>Create Account</h1>
-        <div class="social-icons">
-          <a href=""><i class="fa-brands fa-google"></i></a>
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
-          <a href=""><i class="fa-brands fa-github"></i></a>
-          <a href=""><i class="fa-brands fa-linkedin"></i></a>
-        </div>
+      <h1>Create Account</h1>
+        
         <span>or use your email for registration</span>
         <input type="text" placeholder="Name">
+        <input type="password" placeholder="Apellido">
+        <input type="number" placeholder="Edad" id="edad"  />
+        <div class="form-group">
+          <center>
+          <h6>Genero:</h6>
+          </center>
+        <div class="form-check form-check-inline">
+         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+         <label class="form-check-label" for="inlineCheckbox1">M</label>
+      </div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">F</label>
+</div>
+   </div>
+        <input type="file" placeholder="fotografia" accept="image/*" placeholder="Foto de perfil" >
         <input type="email" placeholder="Email">
         <input type="password" placeholder="Password">
+        <input type="text" placeholder="pais" >
+        <input type="text" placeholder="direccion" >
         <button>Sign In</button>
       </form>
     </div>

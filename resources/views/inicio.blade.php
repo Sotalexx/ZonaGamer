@@ -14,19 +14,21 @@
 </head>
 <body>
 <!-- Contenedor padre del header-->
-<header class="header-container">
+    <header class="header-container">
 
-  <div class="logo-container">
+     <div class="logo-container">
     <a href="#"><img src="{{ asset ('img/logo.png') }}" alt=""></a>
        <h1>ZonaGamer</h1>
   </div>
 
   <!--Barra de busqueda-->
-  <div class="barra-container">
+  <div class="contenedor-barra">
+    <div class="barra-container">
          <input class="buscar" type="text" placeholder="Buscar">
         <div class="btn-barra">
              <i class="fas fa-search"></i>
          </div>
+    </div>
     </div>
 
  <!--Botones de interaccion-->
@@ -38,9 +40,8 @@
 
  
  </header>
-
-         <!--Navbar-->
-    <div class="menu navbar">
+  <!--Navbar-->
+        <navbar class="menu navbar">
           <div class="dropdown">
             <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                  PC
@@ -82,9 +83,22 @@
                     <li><button class="dropdown-item" type="button">Another action</button></li>
                     <li><button class="dropdown-item" type="button">Something else here</button></li>
                  </ul>
+            </div>
           </div>
-        </div> 
-    </div>
+        </navbar> 
+    
+
+         <!--Banner principal-->
+         <div class="logo-mamamlon">
+            <img src="{{asset('img/banner-maalon.jpg')}}" alt="">
+         </div>
+
+         <!--Tendecias de productos-->
+         <div class="container-tendencia">
+            <div class="tendecia">
+                <h2>Tendencias</h2><hr>
+            </div>
+         </div>
 
 
 
