@@ -31,11 +31,6 @@
          </div>
     </div>
 
-  
-    <form class="form-inline mx-auto ">
-        <input class="form-controlBuscar m-3 p-2" type="search" placeholder="Buscar" aria-label="Search">
-        <button class="btn btn-outline-secondary p-2" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </form>
 
  <!--Botones de interaccion-->
     <div class="btn-interaccion">
@@ -100,15 +95,10 @@
 
 
         </navbar> 
-
-        <div> 
-            <a class="text-light" href="{{ url('/noticias') }}">Noticias</a>
-
-          </div>
     
         <aside class="aside-container">
             <div class="banner-principal">
-                <img src="{{ asset ('img/banner-maalon.jpg') }}" alt="">
+                <img src="{{ asset ('img/Banner-mamalon.jpg') }}" alt="">
             </div>
         </aside>
 
