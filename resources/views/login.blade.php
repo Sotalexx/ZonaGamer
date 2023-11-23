@@ -15,6 +15,8 @@
   <body>
    <div class="container" id="container">
     <div class="form-container sign-up">
+    <form action="{{ route('register') }}" method="POST" enctype="multipart/form-data">
+      @csrf
       <form>
       <h1>Create Account</h1>
         
@@ -41,6 +43,7 @@
         <input type="text" placeholder="pais" >
         <input type="text" placeholder="direccion" >
         <button>Sign In</button>
+      </form>
       </form>
     </div>
     <div class="form-container sign-in">

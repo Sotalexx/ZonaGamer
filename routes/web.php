@@ -37,3 +37,5 @@ Route::get('/inicio', function () {
     return view('inicio');
 });
 
+Route::post('/register', 'AuthController@register')->name('register');
+
