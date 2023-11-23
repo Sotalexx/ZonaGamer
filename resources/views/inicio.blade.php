@@ -88,6 +88,11 @@
             </div>
           </div>
         </navbar> 
+
+        <div> 
+            <a class="text-light" href="{{ url('/noticias') }}">Noticias</a>
+
+          </div>
     
         <aside class="aside-container">
             <div class="banner-principal">
@@ -107,10 +112,16 @@
 
         
 
-
-
-
-
+<!-- Footer -->
+<footer class="text-light py-3 mt-5 text-center">
+        <p>&copy; Zona Gamer 2023 <img src="{{ asset('img/logo.png') }}" alt="Logo" height="80"></p>
+        <p>
+            <a href="#" class="text-light"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-light ml-3"><i class="fab fa-instagram"></i></a>
+            <a href="tel:+123456789" class="text-light ml-3"><i class="fas fa-phone"></i></a>
+        </p>
+        <p><a href="#">Política de privacidad</a> | <a href="{{ url('/terminos') }}">Términos y condiciones</a></p>
+</footer>
 
 
 
