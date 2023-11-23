@@ -51,4 +51,6 @@ Route::get('/terminos', function () {
     return view('terminos'); 
 });
 
-
+Route::get('/carrito', function () {
+    return view('carrito_compras'); 
+});

@@ -103,9 +103,9 @@ body{
     width: 25%;
     font-size: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     align-items: center;
-    margin: 10px;
+    margin-left: 10px;
 }
 
 .btn-interaccion i{
