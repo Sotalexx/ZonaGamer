@@ -31,6 +31,11 @@
          </div>
     </div>
 
+  
+    <form class="form-inline mx-auto ">
+        <input class="form-controlBuscar m-3 p-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-secondary p-2" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
 
  <!--Botones de interaccion-->
     <div class="btn-interaccion">
@@ -87,6 +92,13 @@
                  </ul>
             </div>
           </div>
+
+          <div> 
+            <a class="text-light" href="{{ url('/noticias') }}">Noticias</a>
+
+          </div>
+
+
         </navbar> 
 
         <div> 
