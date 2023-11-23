@@ -39,9 +39,6 @@ Route::get('/inicio', function () {
 
 Route::post('/register', 'AuthController@register')->name('register');
 
-
-
-
 Route::get('/noticias', function () {
     return view('noticias'); 
 });
@@ -54,5 +51,4 @@ Route::get('/terminos', function () {
     return view('terminos'); 
 });
 
-Route::post('/register', 'AuthController@register')->name('register');
 
