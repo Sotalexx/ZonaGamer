@@ -39,7 +39,33 @@
                 <h3 class="Meterse">Sign In</h3>
             </a>
             <a href="#"><i class="corazon fas fa-heart"></i></a>
-            <a href=""><i class="fas fa-user"></i></a>
+
+            <div class="dropdown-center">
+                <button class="boton-user btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="user-mamalon fas fa-user"></i>
+                </button>
+                <ul class="nose dropdown-menu">
+
+                    <li><a href="{{url ('/cuenta')}}"><button class="letras dropdown-item" type="button">Mis pedidos
+                            </button></li></a>
+
+                    <li><a href="{{url ('/cuenta')}}"><button class="letras dropdown-item" type="button">Mi
+                                cuenta</button></li></a>
+
+                    <li><a href="{{url ('/cuenta')}}"><button class="letras dropdown-item" type="button">Mi
+                                saldo</button></li></a>
+                    <hr>
+
+                    <li>
+                        <a href="{{url ('/cuenta')}}"><button class="letras dropdown-item" type="button">Cerrar
+                                sesion</button>
+                    </li>
+                    </a>
+                </ul>
+            </div>
+            </a>
+
             <a href="{{ url('/carrito') }}"><i class="carrito fas fa-shopping-cart"></i></a>
 
 
@@ -67,9 +93,8 @@
                 Playstation
             </button>
             <ul class="dropdown-menu">
-                <li><button class="dropdown-item" type="button">Action</button></li>
-                <li><button class="dropdown-item" type="button">Another action</button></li>
-                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                <li><button class="dropdown-item" type="button">Playstation 4</button></li>
+                <li><button class="dropdown-item" type="button">Playstation 4</button></li>
             </ul>
         </div>
 
@@ -79,9 +104,8 @@
                 Xbox
             </button>
             <ul class="dropdown-menu">
-                <li><button class="dropdown-item" type="button">Action</button></li>
-                <li><button class="dropdown-item" type="button">Another action</button></li>
-                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                <li><button class="dropdown-item" type="button">Xbox</button></li>
+                <li><button class="dropdown-item" type="button">Xbox serie X|S</button></li>
             </ul>
         </div>
 
@@ -91,9 +115,7 @@
                 Nintendo
             </button>
             <ul class="dropdown-menu">
-                <li><button class="dropdown-item" type="button">Action</button></li>
-                <li><button class="dropdown-item" type="button">Another action</button></li>
-                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                <li><button class="dropdown-item" type="button">Nintendo switch</button></li>
             </ul>
         </div>
         </div>

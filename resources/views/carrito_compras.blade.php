@@ -16,21 +16,37 @@
     <header class="header-container">
 
         <div class="logo-container">
-            <a href="#"><img src="{{ asset ('img/logo.png') }}" alt=""></a>
+            <a href="{{url('/inicio')}}"><img src="{{ asset ('img/logo.png') }}" alt=""></a>
             <h1>ZonaGamer</h1>
         </div>
     </header>
 
     <main class="main-container">
-
-
         <div class="cesta-container">
-            <h2 class="titulo2">CESTA</h2>
+            <div class="item-container">
+                <div class="imagen-container">
+                    <img src="{{ asset ('img/noti2.jpg') }}" alt="">
+                </div>
+                <div class="text-container">
+                    <label for="cesta">Playstation</label>
+                    <label for="cesta-pequeña">Playstation Store</label>
+                </div>
+                <div class="precio">
+                    <h2>$16.95</h2>
+                </div>
+            </div>
+
+
         </div>
 
-        <div class="resumen-container">
+
+
+
+
+        <div class=" resumen-container">
             <h2 class="titulo2">RESUMEN</h2>
         </div>
+
     </main>
 
 </body>
