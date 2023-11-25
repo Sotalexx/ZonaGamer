@@ -36,17 +36,33 @@
 
         <!--Botones de interaccion-->
         <div class="btn-interaccion">
-       
         
-            <a class="text-decoration-none" href="{{ url('/login') }}">
-                <h3 class="Meterse">Sign In</h3>
-            </a>
-            <a href="#"><i class="corazon fas fa-heart"></i></a>
-            
-            <a href="{{ url('/carrito') }}"><i class="carrito fas fa-shopping-cart"></i> <span id="cart-count" class="cart-count">0</span></a>
-            
+        <div class="dropdown-center">
+                <button class="boton-user btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fas fa-user"></i>
+                </button>
+                <ul class="nose dropdown-menu">
 
+                    <li><a href="{{url ('/cuenta')}}"><button class="letras dropdown-item" type="button">Mis pedidos
+                            </button></li></a>
 
+                    <li><a href="{{url ('/cuenta')}}"><button class="letras dropdown-item" type="button">Mi
+                                cuenta</button></li></a>
+
+                    <li><a href="{{url ('/cuenta')}}"><button class="letras dropdown-item" type="button">Mi
+                                saldo</button></li></a>
+                    <hr>
+
+                    <li>
+                        <a href="{{url ('/cuenta')}}"><button class="letras dropdown-item" type="button">Cerrar
+                                sesion</button></a>
+                    </li>
+                    
+                </ul>
+            </div>
+        <a href="#"><i class="corazon fas fa-heart"></i></a>
+        <a href="{{ url('/carrito') }}"><i class="carrito fas fa-shopping-cart"></i> <span id="cart-count" class="cart-count">0</span></a>
         </div>
 
 
@@ -116,8 +132,6 @@
         </div>
     </aside> <br><br>
 
-   
-
     <h2 class=" text-light text-center" > DESTACADOS</h2>
    <div id="myCarousel" class="carousel slide" data-ride="carousel">
      <div class="carousel-inner">
@@ -182,10 +196,7 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Siguiente</span>
   </a>
-</div> <br><br>
-
-<h1 class="text-light text-center">Recomendados para ti</h1>
-
+</div>
 
 
     

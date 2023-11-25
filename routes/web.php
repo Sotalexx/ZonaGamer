@@ -12,7 +12,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('inicio');
 });
@@ -33,6 +32,25 @@ Route::get('/terminos', function () {
     return view('terminos'); 
 });
 
+Route::get('/secionIniciada', function () {
+    return view('secionIniciada');
+});
+
+
+Route::get('/seccionAdmin', function () {
+    return view('seccionAdmin');
+});
+
+Route::get('/crudProducts', function () {
+    return view('crudProducts'); 
+});
+
+Route::get('/adminUsuarios', function () {
+    return view('adminUsuarios'); 
+});
+
+
+
 Route::get('/inicio', function () {
     return view('inicio');
 });
@@ -43,7 +61,7 @@ Route::get('/noticias', function () {
     return view('noticias'); 
 });
 
-Route::get('/inicio', function () {
+Route::get('/inicion ', function () {
     return view('inicio'); 
 });
 
@@ -53,8 +71,4 @@ Route::get('/terminos', function () {
 
 Route::get('/carrito', function () {
     return view('carrito_compras'); 
-});
-
-Route::get('/cuenta', function () {
-    return view('usuario'); 
 });
